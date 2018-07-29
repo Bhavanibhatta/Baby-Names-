@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BabyNames</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+
+
+    <div class="" container>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="form" action="#">
+                    <label for="multipleChoice" class="col-sm-2 col-form-label">Country:</label>
+                    <select class="form-control" id="selectOption" required>
+                        <option value="">--Select--</option>
+                        <option value="India">India</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Italy">Italy</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                    </select>
+
+                    <label for="gender" class="col-sm-2 col-form-label">Gender:</label>
+                    <div class="form-check form-check-inline" id="select-gender">
+                        <input type="radio" class="form-check-input" name="inlineRadioOptions" value="male" id="selectGender" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Male
+                        </label>
+                        <div>
+                            <input type="radio" class="form-check-input" name="inlineRadioOptions" value="female" id="selectGender">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="number" class="col-sm-2 col-form-label">Names:</label>
+                        <input type="number" class="form-control" id="names-to-generate" required>
+                    </div>
+                    <button id="btn" class="btn btn-primary">Get Names</button>
+                </form>
+                <div id="error"></div>
+            </div>
+            <div class="col-md-4">
+
+                
+                <div id="ul" class="list-group"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
